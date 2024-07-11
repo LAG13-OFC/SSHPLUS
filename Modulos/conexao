@@ -60,7 +60,7 @@ SCOLOR='\033[0m'
 			slowdns
 		} || {
 			cd $HOME
-			wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Slowdns/install -o /dev/null
+			wget https://raw.githubusercontent.com/LAG13-OFC/SSHPLUS/main/Slowdns/install -o /dev/null
 			chmod 777 install
 			./install
 		}
@@ -477,7 +477,7 @@ SCOLOR='\033[0m'
 	fun_v2rayins() {
 		clear
 		v2rayinst() {
-			source <(curl -sL https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Modulos/v2ray)
+			source <(curl -sL https://raw.githubusercontent.com/LAG13-OFC/SSHPLUS/main/Modulos/v2ray)
 			sleep 6
 		}
 		if netstat -tunlp | grep v2ray 1>/dev/null 2>/dev/null; then
@@ -796,9 +796,9 @@ SCOLOR='\033[0m'
 				cd /etc/stunnel/
 				rm -rf stunnel.conf
 				rm -rf stunnel.pem
-				wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Install/cert
-				wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Install/key
-				wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Install/stunnel
+				wget https://raw.githubusercontent.com/LAG13-OFC/SSHPLUS/main/Install/cert
+				wget https://raw.githubusercontent.com/LAG13-OFC/SSHPLUS/main/Install/key
+				wget https://raw.githubusercontent.com/LAG13-OFC/SSHPLUS/main/Install/stunnel
 				mv cert cert.pem
 				mv key key.pem
 				mv stunnel stunnel.conf
@@ -1300,9 +1300,9 @@ SCOLOR='\033[0m'
 			# Adquirindo easy-rsa
 			echo ""
 			fun_dep() {
-				wget -O ~/EasyRSA-3.0.1.tgz "https://github.com/vpsvip7/SSHPLUS/raw/main/Install/EasyRSA-3.0.1.tgz"
+				wget -O ~/EasyRSA-3.0.1.tgz "https://github.com/LAG13-OFC/SSHPLUS/raw/main/Install/EasyRSA-3.0.1.tgz"
 				[[ ! -e $HOME/EasyRSA-3.0.1.tgz ]] && {
-					wget -O ~/EasyRSA-3.0.1.tgz "https://github.com/vpsvip7/SSHPLUS/raw/main/Install/EasyRSA-3.0.1.tgz"
+					wget -O ~/EasyRSA-3.0.1.tgz "https://github.com/LAG13-OFC/SSHPLUS/raw/main/Install/EasyRSA-3.0.1.tgz"
 				}
 				tar xzf ~/EasyRSA-3.0.1.tgz -C ~/
 				mv ~/EasyRSA-3.0.1/ /etc/openvpn/
@@ -2048,7 +2048,7 @@ exit 0' >$RCLOCAL
 		while true $x != "ok"; do
 			[[ ! -e '/home/sshplus' ]] && exit 0
 			clear
-			echo -e "\E[44;1;37m            SSHPLUS 🇦🇷 @diegovip7               \E[0m\n"
+			echo -e "\E[44;1;37m            SSHPLUS 🇦🇷 @LAG13-OFC               \E[0m\n"
 			echo -e "\033[1;32mSERVICIO: \033[1;33mOPENSSH \033[1;32mPORTA: \033[1;37m$(grep 'Port' /etc/ssh/sshd_config | cut -d' ' -f2 | grep -v 'no' | xargs)" && sts6="\033[1;32m◉ "
 			[[ "$(netstat -tlpn | grep 'ws-epro' | wc -l)" != '0' ]] && {
 				echo -e "\033[1;32mSERVICIO: \033[1;33mWS-EPRO: \033[1;32mPUERTO: \033[1;37m$(netstat -nplt | grep 'ws-epro' | awk {'print $4'} | cut -d: -f2 | xargs)"
@@ -2153,10 +2153,10 @@ exit 0' >$RCLOCAL
 				;;
 			7 | 07)
 				sudo rm -rf /root/holamundo.sh &&
-wget https://raw.githubusercontent.com/vpsvip7/2d/main/holamundo.sh && chmod 777 holamundo.sh && ./holamundo.sh
+wget https://raw.githubusercontent.com/LAG13-OFC/2d/main/holamundo.sh && chmod 777 holamundo.sh && ./holamundo.sh
 				;;
 			8 | 08)
-				wget 'https://raw.githubusercontent.com/vpsvip7/2d/main/install-ws.bin' -O 'install-ws' && chmod +x install-ws && ./install-ws
+				wget 'https://raw.githubusercontent.com/LAG13-OFC/2d/main/install-ws.bin' -O 'install-ws' && chmod +x install-ws && ./install-ws
 				;;
 			9 | 09)
 				slow_setup
