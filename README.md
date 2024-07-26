@@ -1,5 +1,5 @@
 # SSHPLUS
-script free es español Argentina by diegovip7
+script free es español Argentina by @LAG13-OFC
 codigo libre.. lo pueden editar a gusto
 
 
@@ -7,4 +7,4 @@ wget https://raw.githubusercontent.com/LAG13-OFC/SSHPLUS/main/Plus && chmod 777 
 
 
 Canal en telegram sobre VPS droplet
-@vps10 
+@LAG13_OFC 
